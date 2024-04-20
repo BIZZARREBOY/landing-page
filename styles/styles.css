@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-* {
+* {    
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
+    box-sizing: border-box ;
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -11,27 +12,61 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
-img {
+header img {
     height: 72px;
+    padding-top: 10px;
 }
 
-ul {
+header ul {
     list-style: none;
     padding: 16px;
     display: flex;
     gap: 16px;
 }
 
-a {
+header a {
     text-decoration: none;
     color: azure;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-a:hover {
-    color: red;
+.hero-container {
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 900px;
+}
+
+.hero-content h1{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 28px;
+    text-align: center;
+    width: 500px;
+}
+
+.pricing-container {
+    height: 100vh;
+}
