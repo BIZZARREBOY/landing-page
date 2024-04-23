@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+/*Hero*/
+
 * {    
     margin: 0;
     padding: 0;
@@ -13,14 +15,14 @@ header {
     justify-content: space-between;
     align-items: center;
     background: rgb(0, 0, 0);
-    position: fixed;
     width: 100%;
-    z-index: 2;
+    position:fixed;
 }
 
 header img {
     height: 72px;
     padding-top: 10px;
+    z-index: 1;
 }
 
 header ul {
@@ -37,22 +39,25 @@ header a {
     font-weight: 400;
 }
 
+/*HERO*/
+
 .hero-container {
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     color: white;
+    min-height: 100vh;
 }
 
 .hero-content {
+    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 900px;
+    width: 90%;
 }
 
 .hero-content h1{
@@ -67,6 +72,86 @@ header a {
     width: 500px;
 }
 
+/*Pricing*/
+
 .pricing-container {
-    height: 100vh;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-container h1 {
+    margin-top: 100px;
+    font-size: 100px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.pricing-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 100px 0;
+}
+
+.card {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-container ul {
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card button {
+    padding: 10px 40px;
+    border: 5px solid #800000;
+    background: transparent;
+    border-radius: 10px;
+    color: #800000;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
 }
