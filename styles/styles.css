@@ -22,7 +22,6 @@ header {
 header img {
     height: 72px;
     padding-top: 10px;
-    z-index: 1;
 }
 
 header ul {
@@ -42,7 +41,7 @@ header a {
 /*HERO*/
 
 .hero-container {
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +59,8 @@ header a {
     width: 90%;
 }
 
-.hero-content h1{
+.hero-content h1, 
+.customer-content h1{
     font-size: 100px;
     text-align: center;
     font-weight: 900;
@@ -145,7 +145,8 @@ header a {
     text-align: center;
 }
 
-.card button {
+.card button,
+.customer-content button {
     padding: 10px 40px;
     border: 5px solid #800000;
     background: transparent;
@@ -155,3 +156,91 @@ header a {
     font-weight: 900;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #800000;
+    color: #f4f4f4;
+}
+
+/*Clientes*/
+
+.customer-container {
+    background-color: #000000;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.customer-content {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.customer-content h1 {
+    margin-bottom: 50px;
+}
+
+.customer-content img {
+    width: 80%;
+}
+
+/*FOOTER*/
+
+.footer-container {
+    height: 400px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+
+.footer-content h4 {
+    font-weight: 900;
+    padding: 5px;
+}
+
+.footer-content li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.social-network {
+    width: 50%;
+    display: flex;
+}
+
+.social-network ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    color: #000000;
+    list-style-type: none;
+}
+
+.social-network a{
+    color: black;
+}
+
